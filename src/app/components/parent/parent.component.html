@@ -1,0 +1,6 @@
+<ul>
+  @for(userName of userNames$ | async; track $index){
+  <li>{{ userName }}</li>
+  }
+</ul>
+<app-child></app-child>
