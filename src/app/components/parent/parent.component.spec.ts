@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SecondMeterComponent } from './second-meter.component';
+import { ParentComponent } from './parent.component';
 
-describe('SecondMeterComponent', () => {
-  let component: SecondMeterComponent;
-  let fixture: ComponentFixture<SecondMeterComponent>;
+describe('ParentComponent', () => {
+  let component: ParentComponent;
+  let fixture: ComponentFixture<ParentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SecondMeterComponent ]
+      imports: [ParentComponent]
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(SecondMeterComponent);
+    
+    fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
